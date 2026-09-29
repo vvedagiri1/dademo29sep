@@ -1,0 +1,95 @@
+.tabs-testimonial .tabs-testimonial-panel {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.tabs-testimonial .tabs-testimonial-panel[aria-hidden='true'] {
+  display: none;
+}
+
+.tabs-testimonial .tabs-testimonial-media {
+  line-height: 0;
+}
+
+.tabs-testimonial .tabs-testimonial-media picture {
+  display: block;
+  overflow: hidden;
+}
+
+.tabs-testimonial .tabs-testimonial-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.tabs-testimonial .tabs-testimonial-body > :first-child {
+  margin-top: 0;
+}
+
+.tabs-testimonial .tabs-testimonial-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.tabs-testimonial .tabs-testimonial-tab {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 8px 12px;
+  width: 100%;
+  min-width: 0;
+  border: 1px solid transparent;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: start;
+  white-space: normal;
+  cursor: pointer;
+}
+
+.tabs-testimonial .tabs-testimonial-tab[aria-selected='true'] {
+  border-color: currentcolor;
+  cursor: default;
+}
+
+.tabs-testimonial .tabs-testimonial-tab p {
+  margin: 0;
+}
+
+.tabs-testimonial .tabs-testimonial-avatar {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  line-height: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.tabs-testimonial .tabs-testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tabs-testimonial .tabs-testimonial-label {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+@media (width >= 900px) {
+  .tabs-testimonial .tabs-testimonial-panel {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .tabs-testimonial .tabs-testimonial-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
