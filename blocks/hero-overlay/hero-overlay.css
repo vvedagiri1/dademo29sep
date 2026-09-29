@@ -1,0 +1,75 @@
+.hero-overlay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 360px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero-overlay .hero-overlay-background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  line-height: 0;
+}
+
+.hero-overlay .hero-overlay-background picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-overlay .hero-overlay-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* legibility scrim; the design pass can override the custom property */
+.hero-overlay .hero-overlay-background::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--hero-overlay-scrim, rgb(0 0 0 / 45%));
+}
+
+.hero-overlay .hero-overlay-content {
+  position: relative;
+  width: 100%;
+  padding: 32px 24px;
+  box-sizing: border-box;
+}
+
+.hero-overlay .hero-overlay-content > :first-child {
+  margin-top: 0;
+}
+
+.hero-overlay .hero-overlay-content > :last-child {
+  margin-bottom: 0;
+}
+
+.hero-overlay.hero-overlay-no-image {
+  min-height: 0;
+}
+
+@media (width >= 600px) {
+  .hero-overlay {
+    min-height: 420px;
+  }
+
+  .hero-overlay .hero-overlay-content {
+    padding: 48px 40px;
+  }
+}
+
+@media (width >= 900px) {
+  .hero-overlay {
+    min-height: 520px;
+  }
+
+  .hero-overlay .hero-overlay-content {
+    max-width: 66%;
+    padding: 64px;
+  }
+}

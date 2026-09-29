@@ -1,0 +1,42 @@
+{
+  "id": "columns-feature",
+  "name": "columns-feature",
+  "variantName": "columns-feature",
+  "type": "columns",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "version": "1.0.0",
+  "created": "2026-09-29T05:48:25.740Z",
+  "sourceContext": {
+    "originUrl": "https://www.wknd-trendsetters.site/",
+    "discoveredDuring": "site-migration"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "purpose": "featured-story",
+    "imagePattern": "large",
+    "structure": "image + breadcrumb + h2 + byline + meta",
+    "sourceColorScheme": "light",
+    "sourceDensity": "balanced",
+    "sourceImagePattern": "large-left"
+  },
+  "contentPattern": {
+    "structure": "1 row x 2 columns: [img] | [p(breadcrumb links), h2, p(By Taylor Brooks), p(June 12, 2024 • 4 min read)]",
+    "imageCount": 1
+  },
+  "options": [],
+  "memberVariantIds": [
+    "columns-feature"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.wknd-trendsetters.site/",
+        "screenshot": "migration-work/screenshot.png"
+      }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-29T05:48:25.740Z"
+  }
+}

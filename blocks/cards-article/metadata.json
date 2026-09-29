@@ -1,0 +1,42 @@
+{
+  "id": "cards-article",
+  "name": "cards-article",
+  "variantName": "cards-article",
+  "type": "cards",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "version": "1.0.0",
+  "created": "2026-09-29T05:50:05.303Z",
+  "sourceContext": {
+    "originUrl": "https://www.wknd-trendsetters.site/",
+    "discoveredDuring": "site-migration"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "purpose": "article-teasers",
+    "imagePattern": "single",
+    "structure": "image + tag + date + h3 (linked card)",
+    "sourceColorScheme": "light-grey",
+    "sourceDensity": "balanced",
+    "sourceImagePattern": "top-image"
+  },
+  "contentPattern": {
+    "structure": "4 rows x 2 columns: [img] | [p(tag), p(date), h3 linked title]",
+    "imageCount": 1
+  },
+  "options": [],
+  "memberVariantIds": [
+    "cards-article"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.wknd-trendsetters.site/",
+        "screenshot": "migration-work/screenshot.png"
+      }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-29T05:50:05.303Z"
+  }
+}

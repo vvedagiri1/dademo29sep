@@ -1,0 +1,44 @@
+.cards-gallery > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.cards-gallery > ul > li {
+  margin: 0;
+  overflow: hidden;
+}
+
+.cards-gallery .cards-gallery-image {
+  line-height: 0;
+}
+
+.cards-gallery .cards-gallery-image picture {
+  display: block;
+}
+
+.cards-gallery .cards-gallery-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.cards-gallery .cards-gallery-body {
+  padding: 8px 0;
+}
+
+@media (width >= 600px) {
+  .cards-gallery > ul {
+    gap: 16px;
+  }
+}
+
+@media (width >= 900px) {
+  .cards-gallery > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
